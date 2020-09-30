@@ -13,7 +13,7 @@ fetch(apiUrl, { headers: { "user-key": apiKey } })
         
         let restaurants = json.restaurants 
         let filteredRestaurants = restaurants.splice(0, 12)
-        //console.log(filteredRestaurants)
+        console.log(filteredRestaurants)
 
         filteredRestaurants.forEach((restaurant) => {
             const name = restaurant.restaurant.name;
@@ -24,13 +24,14 @@ fetch(apiUrl, { headers: { "user-key": apiKey } })
             const img = restaurant.restaurant.featured_image;
             
             document.getElementById('restaurantContainer').innerHTML += `<div class="eachRestaurant">
-                                                                            <img class="restaurant-img" src=${img}</img>
-                                                                            <p class="restaurant-name">${name}</p>
-                                                                            <p class="restaurant-rating">&#9734;
-                                                                             ${rating}</p>
-                                                                            <p class="restaurant-avcost">${avCost} RP</p>
-                                                                            <p class="restaurant-address">${address}</p>
-                                                                            
+                                                                            <ul>
+                                                                            <img class="restaurant-img" src="${img}"</img>
+                                                                            <li class="restaurant-name">${name}</li>
+                                                                            <li class="restaurant-rating">&#9734;
+                                                                             ${rating}</li>
+                                                                            <li class="restaurant-avcost"><strong>${avCost}</strong> RP</li>
+                                                                            <li class="restaurant-address">${address}</li>
+                                                                            </ul>
                                                                             </div>`;
             
             

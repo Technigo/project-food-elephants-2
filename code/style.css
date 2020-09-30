@@ -5,45 +5,90 @@ body {
     
 }
 
+header {
+    width: auto;
+    height: 300px;
+    background-image: url("./images/header.jpg");
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    
+}
+
+header h1 {
+    margin-top: 100px;
+}
+
 .restaurant-container {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    width: 250px;
     
     
 }
 
 .eachRestaurant {
     font-size: 15px;
-    
+    width: 280px;
 }
 
 .restaurant-img {
     width: 250px;
-    height: auto;
+    height: 175px;
 }
 
 .restaurant-name {
     font-weight: bold;
+    list-style-type: none;
 }
 
 
 .restaurant-rating {
-    
+    list-style-type: none;
 }
 
 .restaurant-avcost {
     color: darkblue;
+    list-style-type: none;
 }
 
-#restaurant-address {
+.restaurant-address {
+    list-style-type: none;
     color: gray;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: #d70f64;
+    color: white;
+    overflow: hidden;
+    
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+.restaurant-container {
+    display: flex;
+    flex-direction: row;
+    
+   
+    
+        
+        
+    }
 
+    .eachRestaurant {
+        
+       flex-wrap: wrap;
+    }
 
 }
 
