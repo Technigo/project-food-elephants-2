@@ -23,10 +23,22 @@ fetch(apiUrl, { headers: { "user-key": apiKey } })
             const rating = restaurant.restaurant.user_rating.aggregate_rating;
             const img = restaurant.restaurant.featured_image;
             
-            document.getElementById('restaurantContainer').innerHTML += `${name} ${address} ${rating}`
+            document.getElementById('restaurantContainer').innerHTML += `<div class="eachRestaurant">
+                                                                            <img class="restaurant-img" src=${img}</img>
+                                                                            <p class="restaurant-name">${name}</p>
+                                                                            <p class="restaurant-rating">&#9734;
+                                                                             ${rating}</p>
+                                                                            <p class="restaurant-avcost">${avCost} RP</p>
+                                                                            <p class="restaurant-address">${address}</p>
+                                                                            
+                                                                            </div>`;
+            
+            
             console.log(`${img} ${address} ${rating}`);
         });
   
+
+        
     // console.log(json.restaurants[0].restaurant.name);
     // console.log(json.restaurants[0].restaurant.location.address);
     // console.log(json.restaurants[0].restaurant.average_cost_for_two);
@@ -57,6 +69,11 @@ fetch(apiPriceAsc, { headers: { "user-key": apiKey } })
   });
 
 });
+
+
+
+
+
 
     
 

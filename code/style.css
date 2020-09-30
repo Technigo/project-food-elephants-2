@@ -1,0 +1,57 @@
+
+body {
+    font-family: "Open Sans", "MuseoSans", Arial, sans-serif;
+    background-color: white;
+    
+}
+
+.restaurant-container {
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.eachRestaurant {
+    font-size: 15px;
+    
+}
+
+.restaurant-img {
+    width: 250px;
+    height: auto;
+}
+
+.restaurant-name {
+    font-weight: bold;
+}
+
+
+.restaurant-rating {
+    
+}
+
+.restaurant-avcost {
+    color: darkblue;
+}
+
+#restaurant-address {
+    color: gray;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+
+}
